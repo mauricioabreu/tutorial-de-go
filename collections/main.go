@@ -50,6 +50,7 @@ func main() {
 	// Mapas são como dicionários do Python ou Hash do Ruby
 	// Esse map é um dicionário com chaves string e valores inteiros
 	// Em go, os dicionários não podem ter tipos misturados
+	// Importante: mapas em go não são ordenados
 	users := map[string]int{
 		"Mauricio": 32,
 		"Lais":     29,
