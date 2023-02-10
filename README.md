@@ -6,8 +6,8 @@ Ordem dos assuntos:
 
 1. Variables
 2. Flow
-3. Functions
-4. Collections
+3. Collections
+4. Functions
 5. Structs
 6. Errors
 7. Packages
