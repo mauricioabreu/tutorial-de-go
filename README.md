@@ -10,3 +10,4 @@ Ordem dos assuntos:
 4. Structs
 5. Packages
 6. Interfaces
+7. Generics
