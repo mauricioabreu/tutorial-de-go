@@ -48,5 +48,28 @@ func main() {
 	fmt.Println("Prime numbers:", primeNumbers)
 
 	// Mapas são como dicionários do Python ou Hash do Ruby
-
+	// Esse map é um dicionário com chaves string e valores inteiros
+	// Em go, os dicionários não podem ter tipos misturados
+	users := map[string]int{
+		"Mauricio": 32,
+		"Lais":     29,
+		"Bentinho": 2,
+	}
+	fmt.Printf("My name is %s and my age is %d\n", "Mauricio", users["Mauricio"])
+	// Podemos iterar no par chave/valor como em outras linguagens
+	for name, age := range users {
+		fmt.Printf("Name %s and age %d\n", name, age)
+	}
+	// Podemos incluir mais uma usuário no mapa usando uma sintaxe similar a outras linguagens
+	users["Catarina"] = 4
+	// E imprimir de uma forma que ajuda a depuração do código
+	fmt.Printf("Users: %#v\n", users)
+	// Podemos deletar usando a função delete
+	// Essa função deleta usando a referência
+	delete(users, "Catarina")
+	// Testando se ainda existe o elemento
+	// A idade retorna 0 porque é o valor default do inteiro
+	// Diferente de Rust, Go não tem recursos para mostrar a ausência de um valor
+	catarinaAge, ok := users["Catarina"]
+	fmt.Printf("Usuário existe? %t Se sim, qual é a idade? %d\n", ok, catarinaAge)
 }
