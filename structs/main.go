@@ -17,6 +17,7 @@ type band struct {
 	members    []string
 }
 
+// Funções podem ser acopladas a um valor de um tipo (como instância de objetos em Ruby)
 func (b *band) Repr() {
 	fmt.Printf("Band: %s\nFirst Album: %s\nMembers: %s\n", b.name, b.firstAlbum, b.Members())
 }
