@@ -25,7 +25,7 @@ func main() {
 	active := true
 	switch {
 	case number > 5:
-		fmt.Println("Number 5 is greater")
+		fmt.Println("Number is greater than 5")
 	case active:
 		fmt.Println("true is true")
 	}
